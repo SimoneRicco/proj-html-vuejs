@@ -83,7 +83,7 @@ $yellow: #e9d758;
   background-color: rgba($color: $orange, $alpha: 0.9);
 }
 header {
-  padding-inline: 15px;
+  padding: 2rem 2rem 0 2rem;
   display: flex;
   align-items: center;
   color: white;
@@ -115,12 +115,17 @@ header {
     width: 720px;
     margin: auto;
     text-align: center;
+    line-height: 1.5rem;
+    h1 {
+      margin-bottom: 1rem;
+    }
   }
   .buttons {
     text-align: center;
     margin-top: 2rem;
     .apply-university {
       color: $orange;
+      margin-left: 20px;
     }
   }
 }
