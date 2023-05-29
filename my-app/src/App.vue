@@ -1,4 +1,5 @@
 <script>
+import Browse from "./components/Browse.vue";
 import Header from "./components/Header.vue";
 export default {
   data() {
@@ -16,6 +17,7 @@ export default {
   },
   components: {
     Header,
+    Browse,
   },
 };
 </script>
@@ -23,6 +25,7 @@ export default {
 <template>
   <div class="container">
     <Header :options="headerOptions"></Header>
+    <Browse></Browse>
   </div>
 </template>
 
