@@ -13,8 +13,8 @@ export default {};
         away and applies foor a course in a matter of minutes. EduPrime is
         ranked as the most versatile university in the world, thanks to the
         number of courses it provides.
-        <button class="browse btn">Browse through courses</button>
       </p>
+      <button class="browse btn">Browse through courses</button>
     </div>
     <div class="side-image">
       <img src="../../edu/img/Graduation-Illustration.png" alt="" />
@@ -46,6 +46,10 @@ section {
 }
 .text {
   width: 50%;
+  p {
+    line-height: 1.3rem;
+    padding: 2rem 0;
+  }
 }
 .side-image {
   width: 50%;
