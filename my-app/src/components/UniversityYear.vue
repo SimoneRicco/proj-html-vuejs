@@ -63,7 +63,6 @@ $orange: #e56768;
 }
 .items {
   display: flex;
-  margin: 1rem 0;
   h3 {
     margin-bottom: 1rem;
   }
@@ -80,5 +79,11 @@ $orange: #e56768;
 }
 h1 {
   margin-bottom: 3rem;
+}
+.top-items {
+  padding-bottom: 1rem;
+}
+.bottom-items {
+  padding-top: 1rem;
 }
 </style>
