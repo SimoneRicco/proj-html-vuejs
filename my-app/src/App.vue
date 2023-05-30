@@ -4,6 +4,7 @@ import Events from "./components/Events.vue";
 import Faculties from "./components/Faculties.vue";
 import GeneralInfo from "./components/GeneralInfo.vue";
 import Header from "./components/Header.vue";
+import Newsletter from "./components/Newsletter.vue";
 import UniversityYear from "./components/UniversityYear.vue";
 export default {
   data() {
@@ -26,6 +27,7 @@ export default {
     UniversityYear,
     Events,
     GeneralInfo,
+    Newsletter,
   },
 };
 </script>
@@ -38,6 +40,7 @@ export default {
     <UniversityYear></UniversityYear>
     <Events></Events>
     <GeneralInfo></GeneralInfo>
+    <Newsletter></Newsletter>
   </div>
 </template>
 
