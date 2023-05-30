@@ -55,11 +55,11 @@ export default {
 <template>
   <section>
     <div class="text">
-      <h2>Faculties</h2>
-      <span
-        >A single university with a load of courses, tailored to satisfy any
+      <h2>Faculties avilable at EduPrime</h2>
+      <div class="after-title">
+        A single university with a load of courses, tailored to satisfy any
         student's needs.
-      </span>
+      </div>
     </div>
     <div class="faculties-row">
       <div
@@ -87,6 +87,9 @@ export default {
 
 <style lang="scss" scoped>
 $orange: #e56768;
+.after-title {
+  padding: 1rem 0;
+}
 .text {
   text-align: center;
 }
@@ -96,6 +99,7 @@ $orange: #e56768;
   padding: 1rem 2rem;
   border-radius: 50px;
   color: white;
+  margin-top: 2rem;
 }
 .active {
   background-color: $orange;
@@ -127,5 +131,9 @@ $orange: #e56768;
 }
 .description-text {
   width: 400px;
+  line-height: 1.5rem;
+  h1 {
+    margin-bottom: 2rem;
+  }
 }
 </style>
