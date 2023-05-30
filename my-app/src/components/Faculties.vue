@@ -19,26 +19,26 @@ export default {
         {
           name: "Economy",
           description:
-            "Learning from world-leading academics and practitioners, you'll not only recieve an outstanding grounding in the theory of law, but you will be able to understand how those principles are applied in practice through a range of student-led activities and competitionist",
-          imgPath: "../../edu/img/Gavel-Illustration-e1556884768193.png",
+            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia aut doloribus recusandae iusto voluptas est reprehenderit et sit, minima voluptatum facilis voluptatem maiores aliquam animi adipisci pariatur reiciendis iste eius?",
+          imgPath: "../../edu/img/Economy.png",
         },
         {
           name: "Medicine",
           description:
-            "Learning from world-leading academics and practitioners, you'll not only recieve an outstanding grounding in the theory of law, but you will be able to understand how those principles are applied in practice through a range of student-led activities and competitionist",
-          imgPath: "../../edu/img/Gavel-Illustration-e1556884768193.png",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laborum libero aliquid temporibus commodi, quam saepe culpa id perferendis laboriosam dolorem quod a tempore fuga eligendi eius dolorum blanditiis. Optio.",
+          imgPath: "../../edu/img/Medicine.png",
         },
         {
           name: "Computer Science",
           description:
-            "Learning from world-leading academics and practitioners, you'll not only recieve an outstanding grounding in the theory of law, but you will be able to understand how those principles are applied in practice through a range of student-led activities and competitionist",
-          imgPath: "../../edu/img/Gavel-Illustration-e1556884768193.png",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iste velit magnam est nesciunt, placeat optio odio ullam atque quas ipsam ipsum excepturi expedita totam debitis eius quisquam nulla aliquam.",
+          imgPath: "../../edu/img/Computer-Science.png",
         },
         {
           name: "Graphic Design",
           description:
-            "Learning from world-leading academics and practitioners, you'll not only recieve an outstanding grounding in the theory of law, but you will be able to understand how those principles are applied in practice through a range of student-led activities and competitionist",
-          imgPath: "../../edu/img/Gavel-Illustration-e1556884768193.png",
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique adipisci aut dolorem quia minus reiciendis officia quasi. Repellat et, dolorem doloribus nemo quasi dignissimos dolores rem placeat ullam provident quibusdam? Animi odit facere corrupti perspiciatis tempora. Quae in, porro a deleniti obcaecati esse blanditiis. Aliquid reprehenderit dolorem doloremque repellendus quia, necessitatibus ut neque excepturi illum aut iusto corrupti quo voluptatum!",
+          imgPath: "../../edu/img/Graphic-Design.png",
         },
       ],
       activeIntex: 0,
@@ -56,11 +56,10 @@ export default {
   <section>
     <div class="text">
       <h2>Faculties</h2>
-      <img src="../../edu/img/Gavel-Illustration-e1556884768193.png" alt="" />
       <span
         >A single university with a load of courses, tailored to satisfy any
-        student's needs.</span
-      >
+        student's needs.
+      </span>
     </div>
     <div class="faculties-row">
       <div
@@ -74,7 +73,14 @@ export default {
       </div>
     </div>
     <div class="description">
-      <h1>{{ facultiesList[activeIntex].name }}</h1>
+      <div class="image">
+        <img :src="facultiesList[activeIntex].imgPath" alt="" />
+      </div>
+      <div class="description-text">
+        <h1>{{ facultiesList[activeIntex].name }}</h1>
+        <p>{{ facultiesList[activeIntex].description }}</p>
+        <button class="read-more-btn">Read more</button>
+      </div>
     </div>
   </section>
 </template>
@@ -83,6 +89,13 @@ export default {
 $orange: #e56768;
 .text {
   text-align: center;
+}
+.read-more-btn {
+  background-color: $orange;
+  border: 0;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  color: white;
 }
 .active {
   background-color: $orange;
@@ -107,5 +120,12 @@ $orange: #e56768;
       width: 50%;
     }
   }
+}
+.description {
+  display: flex;
+  justify-content: center;
+}
+.description-text {
+  width: 400px;
 }
 </style>
