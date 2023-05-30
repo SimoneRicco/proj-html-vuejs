@@ -2,6 +2,7 @@
 import Browse from "./components/Browse.vue";
 import Faculties from "./components/Faculties.vue";
 import Header from "./components/Header.vue";
+import UniversityYear from "./components/UniversityYear.vue";
 export default {
   data() {
     return {
@@ -20,6 +21,7 @@ export default {
     Header,
     Browse,
     Faculties,
+    UniversityYear,
   },
 };
 </script>
@@ -29,6 +31,7 @@ export default {
     <Header :options="headerOptions"></Header>
     <Browse></Browse>
     <Faculties></Faculties>
+    <UniversityYear></UniversityYear>
   </div>
 </template>
 
