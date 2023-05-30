@@ -2,6 +2,7 @@
 import Browse from "./components/Browse.vue";
 import Events from "./components/Events.vue";
 import Faculties from "./components/Faculties.vue";
+import GeneralInfo from "./components/GeneralInfo.vue";
 import Header from "./components/Header.vue";
 import UniversityYear from "./components/UniversityYear.vue";
 export default {
@@ -24,6 +25,7 @@ export default {
     Faculties,
     UniversityYear,
     Events,
+    GeneralInfo,
   },
 };
 </script>
@@ -35,6 +37,7 @@ export default {
     <Faculties></Faculties>
     <UniversityYear></UniversityYear>
     <Events></Events>
+    <GeneralInfo></GeneralInfo>
   </div>
 </template>
 
