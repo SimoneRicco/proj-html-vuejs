@@ -2,6 +2,7 @@
 import Browse from "./components/Browse.vue";
 import Events from "./components/Events.vue";
 import Faculties from "./components/Faculties.vue";
+import Footer from "./components/Footer.vue";
 import GeneralInfo from "./components/GeneralInfo.vue";
 import Header from "./components/Header.vue";
 import Newsletter from "./components/Newsletter.vue";
@@ -30,6 +31,7 @@ export default {
     GeneralInfo,
     Newsletter,
     Partners,
+    Footer,
   },
 };
 </script>
@@ -44,6 +46,7 @@ export default {
     <GeneralInfo></GeneralInfo>
     <Newsletter></Newsletter>
     <Partners></Partners>
+    <Footer></Footer>
   </div>
 </template>
 
