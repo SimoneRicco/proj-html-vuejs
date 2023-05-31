@@ -59,6 +59,7 @@ $orange: #e56768;
 $yellow: #e9d758;
 .wave {
   display: block;
+  max-width: 100%;
 }
 .bg-orange {
   background-color: $orange;
